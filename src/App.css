@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Rokh';
+    font-weight: 100;
+    src: url('./assets/fonts/Rokh-HairLine.woff2');
+}
+
+@font-face {
+    font-family: 'Rokh';
+    font-weight: 200;
+    src: url('./assets/fonts/Rokh-ExtraLight.woff2');
+}
+
+@font-face {
+    font-family: 'Rokh';
+    font-weight: 300;
+    src: url('./assets/fonts/Rokh-Light.woff2');
+}
+
+@font-face {
+    font-family: 'Rokh';
+    font-weight: 400;
+    src: url('./assets/fonts/Rokh-Regular.woff2');
+}
+
+
+@font-face {
+    font-family: 'Rokh';
+    font-weight: 500;
+    src: url('./assets/fonts/Rokh-Normal.woff2');
+}
+@font-face {
+    font-family: 'Rokh';
+    font-weight: 600;
+    src: url('./assets/fonts/Rokh-Medium.woff2');
+}
+
+@font-face {
+    font-family: 'Rokh';
+    font-weight: 700;
+    src: url('./assets/fonts/Rokh-Bold.woff2');
+}
+
+@font-face {
+    font-family: 'Rokh';
+    font-weight: 800;
+    src: url('./assets/fonts/Rokh-ExtraBold.woff2');
+}
+
+@font-face {
+    font-family: 'Rokh';
+    font-weight: 900;
+    src: url('./assets/fonts/Rokh-UltraBold.woff2');
+}
+
+
+body {
+    font-family: 'Rokh';
+    font-weight: 600;
+}
+
+@theme {
+    --color-primary:#CB1B1B;
+
+    --color-neutral3 : #EDEDED;
+    --color-neutral6 : #CBCBCB;
+    --color-neutral9 : #717171;
+}
