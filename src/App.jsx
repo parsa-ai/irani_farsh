@@ -8,6 +8,7 @@ import Login from './pages/login/login'
 import Single from './pages/single/Single'
 import Blog from './pages/blog/Blog'
 import Contact from './pages/contact/Contact'
+import Cart from './pages/Cart/Cart'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path='/' element={<Home />}></Route>
             <Route path='/about' element={<About />}></Route>
             <Route path='/login' element={<Login />}></Route>
+            <Route path='/cart' element={<Cart />}></Route>
             <Route path='/single' element={<Single />}></Route>
             <Route path='/blog' element={<Blog />}></Route>
             <Route path='/contact' element={<Contact />}></Route>
