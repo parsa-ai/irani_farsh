@@ -1,0 +1,39 @@
+.hero-img{
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 8rem);
+}
+.hero-btn-sm{
+    display: none;
+}
+.hero-btn-lg{
+    display: flex;
+}
+@media screen and (max-width : 950px) {
+    .hero-img{
+        flex-direction: column-reverse;
+        height: auto;
+        gap: 2rem;
+        padding: 3rem 0;
+    }
+    .hero-h2{
+        font-size: 20px;
+    }
+    .hero-p{
+        font-size: 12px;
+    }
+    .hero-text{
+        width: auto;
+        gap: 1.5rm;
+    }
+    .hero-btn-lg{
+        display: none;
+    }
+    .hero-btn-sm{
+        display: flex;
+    }
+    .hero-btn{
+        gap: 0.5rem;
+    }
+
+}

@@ -24,8 +24,8 @@ function Header() {
     }
   }
   return (
-    <Container >
-      <header className="flex justify-between items-center pt-6">
+    <Container className='fixed top-0 bg-white h-[7.5rem] z-50'>
+      <header className="flex justify-between items-center pt-6 ">
         <div className="flex justify-between items-center gap-6">
           <Button size="sm" isIcon={true} ColorBackground="bg-neutral3" color="text-BLACK" className='Humber_menu hover:text-neutral3 hover:bg-BLACK' borderColor="border-neutral3" onClick={OnHumberClick}>
             <Menu size={20} ></Menu>
