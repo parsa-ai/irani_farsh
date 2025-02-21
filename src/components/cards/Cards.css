@@ -1,0 +1,11 @@
+.Cards-gride-lg{
+    display: none;
+}
+@media screen and (max-width: 950px) {
+    .Cards-gride-xl{
+        display: none;
+    }
+    .Cards-gride-lg{
+        display: flex;
+    }
+}

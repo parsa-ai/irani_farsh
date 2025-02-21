@@ -1,38 +1,27 @@
 import Card from "../card/Card"
+import Container from "../container/Container"
+import './Cards.css'
 
-function Cards() {
-    let arr = [{
-        title: 'پادری دستبافت',
-        link: 'مشاهده  و خرید پادری',
-        url: '/posts',
-        img: '../../assets/images/'
-    },
-    {
-        title: 'موکت اتاق',
-        link: 'مشاهده  و خرید موکت',
-        url: '/posts',
-        img: '../../assets/images/'
-    },
-    {
-        title: 'فرش های رنگارنگ',
-        link: 'مشاهده  و خرید فرش رنگارنگ',
-        url: '/posts',
-        img: '../../assets/images/'
-    },
-    {
-        title: 'فرش های جدید',
-        link: 'مشاهده  و خرید فرش جدید',
-        url: '/posts',
-        img: '../../assets/images/'
-    }
-]
+function Cards({ items, rest }) {
     return (
-        <div className="grid grid-cols-3 grid-rows-2 gap-6">
-            <Card detial={arr[0]} />
-            <Card className="col-start-1 row-start-2" detial={arr[1]} />
-            <Card className="row-span-2 col-start-2 row-start-1" detial={arr[2]} />
-            <Card className="row-span-2 col-start-3 row-start-1" detial={arr[3]} />
-        </div>
+        <>
+            <Container>
+                <div className="grid grid-cols-3 grid-rows-2 gap-4 h-72 mb-16 Cards-gride-xl" {...rest}>
+                    <Card className="row-span-2" detial={items[0]} />
+                    <Card className="row-span-2" detial={items[1]} />
+                    <Card detial={items[2]} />
+                    <Card className="col-start-3" detial={items[3]} />
+                </div>
+            </Container>
+
+            <div className="flex gap-4 h-72 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide Cards-gride-lg mb-10 "  {...rest}>
+                {items.map((item, index) => (
+                    <div key={index} className="snap-center shrink-0 w-full">
+                        <Card detial={item} className=' mr-[5%]'/>
+                    </div>
+                ))}
+            </div>
+        </>
     )
 }
 

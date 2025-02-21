@@ -15,13 +15,12 @@ function App() {
     <>
       <BrowserRouter>
         <MainLayout>
-
           <Routes>
             <Route path='/' element={<Home />}></Route>
             <Route path='/about' element={<About />}></Route>
             <Route path='/login' element={<Login />}></Route>
             <Route path='/cart' element={<Cart />}></Route>
-            <Route path='/single' element={<Single />}></Route>
+            <Route path='/:single' element={<Single />}></Route>
             <Route path='/blog' element={<Blog />}></Route>
             <Route path='/contact' element={<Contact />}></Route>
           </Routes>
