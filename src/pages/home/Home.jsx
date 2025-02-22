@@ -5,6 +5,9 @@ import s1 from '../../assets/images/s1.png'
 import s2 from '../../assets/images/s2.png'
 import s3 from '../../assets/images/s3.png'
 import s4 from '../../assets/images/s4.png'
+import d1 from '../../assets/images/d1.png'
+
+import Products from "../../components/products/Products"
 
 
 function Home() {
@@ -31,12 +34,41 @@ function Home() {
     link: 'مشاهده  و خرید فرش جدید',
     url: '/posts',
     img: s2
+  }]
+  let arr2 = {
+    id: 0,
+    items: [{
+      id: 0,
+      title: 'فرش ماشینی فرش رادین طرح شاه عباسی آرامش زمینه کرم',
+      price: '۶/۳۰۳/۰۰۰',
+      img: d1
+    },
+    {
+      id: 1,
+      title: 'فرش ماشینی فرش رادین طرح شاه عباسی آرامش زمینه کرم',
+      price: '۶/۳۰۳/۰۰۰',
+      img: d1
+    }, {
+      id: 2,
+      title: 'فرش ماشینی فرش رادین طرح شاه عباسی آرامش زمینه کرم',
+      price: '۶/۳۰۳/۰۰۰',
+      img: d1
+    }, {
+      id: 3,
+      title: 'فرش ماشینی فرش رادین طرح شاه عباسی آرامش زمینه کرم',
+      price: '۶/۳۰۳/۰۰۰',
+      img: d1
+    }]
   }
-  ]
   return (
     <>
-      <Hero />
-      <Cards items={arr} />
+      <div className="flex flex-col gap-[7.5rem]">
+        <Hero />
+        <Cards items={arr} />
+        <Products title='فرش های ماشینی' ipaa={arr2} />
+        <Cards items={arr} />
+        <Products title='فرش های دستبافت' ipaa={arr2} />
+      </div>
     </>
   )
 }

@@ -1,0 +1,17 @@
+.products-md {
+    display: none;
+}
+
+@media screen and (max-width : 950px) {
+    .products-md {
+        display: flex;
+    }
+
+    .products-lg {
+        display : none;
+    }
+    .products-text{
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+}
