@@ -1,0 +1,22 @@
+@media screen and (max-width : 950px) {
+
+    .footer-logo {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    
+.footer-text{
+    font-size: 12px;
+}
+    .footer {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    .footer-l{
+        height: auto;
+        padding: 1.5rem 0 ;
+    }
+    .wp-100{
+        width: 100%;
+    }
+}

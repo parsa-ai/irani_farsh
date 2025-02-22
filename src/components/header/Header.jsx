@@ -30,7 +30,7 @@ function Header() {
           <Button size="sm" isIcon={true} ColorBackground="bg-neutral3" color="text-BLACK" className='Humber_menu hover:text-neutral3 hover:bg-BLACK' borderColor="border-neutral3" onClick={OnHumberClick}>
             <Menu size={20} ></Menu>
           </Button>
-          <h2 className="text-2xl text-primary font-bold">
+          <h2 className="text-2xl text-primary font-bold logo">
             <Link to='/'>ایرانی فرش</Link>
           </h2>
           <div className="bg-neutral3 p-3 rounded-xl gap-2 max-w-md w-md h-12 flex items-center search_lg">
