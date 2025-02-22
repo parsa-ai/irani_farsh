@@ -8,7 +8,9 @@ import s4 from '../../assets/images/s4.png'
 import d1 from '../../assets/images/d1.png'
 
 import Products from "../../components/products/Products"
+import Cta from "../../components/cta/Cta"
 
+import './Home.css'
 
 function Home() {
   let arr = [{
@@ -62,12 +64,13 @@ function Home() {
   }
   return (
     <>
-      <div className="flex flex-col gap-[7.5rem]">
+      <div className="flex flex-col gap-[7.5rem] home" >
         <Hero />
         <Cards items={arr} />
         <Products title='فرش های ماشینی' ipaa={arr2} />
         <Cards items={arr} />
         <Products title='فرش های دستبافت' ipaa={arr2} />
+        <Cta/>
       </div>
     </>
   )

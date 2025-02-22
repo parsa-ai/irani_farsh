@@ -4,10 +4,10 @@ import Button from "../button/Button"
 import { ArrowLeft } from "lucide-react"
 
 import "./Products.css";
-function Products({ title , ipaa }) {
-    let items = ipaa?.items  
+function Products({ title, ipaa }) {
+    let items = ipaa?.items
     return (
-        <>
+        <div>
             <Container >
                 <div className='flex flex-col gap-8'>
                     <div className="flex justify-between items-center">
@@ -32,8 +32,7 @@ function Products({ title , ipaa }) {
                     <Product detial={item} className=' border border-neutral5 rounded-xl p-4 flex flex-col gap-6 snap-center shrink-0  w-72' key={index} />
                 ))}
             </div>
-
-        </>
+        </div>
     )
 }
 

@@ -4,7 +4,7 @@ import './Cards.css'
 
 function Cards({ items, rest }) {
     return (
-        <>
+        <div>
             <Container>
                 <div className="grid grid-cols-3 grid-rows-2 gap-4 h-72 Cards-gride-xl" {...rest}>
                     <Card className="row-span-2" detial={items[0]} />
@@ -14,14 +14,14 @@ function Cards({ items, rest }) {
                 </div>
             </Container>
 
-            <div className="flex gap-4 h-72 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide Cards-gride-lg mb-10 "  {...rest}>
+            <div className="flex gap-4 h-72 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide Cards-gride-lg "  {...rest}>
                 {items.map((item, index) => (
                     <div key={index} className="snap-center shrink-0 w-full">
-                        <Card detial={item} className=' mr-[5%]'/>
+                        <Card detial={item} className=' mr-[5%]' />
                     </div>
                 ))}
             </div>
-        </>
+        </div>
     )
 }
 

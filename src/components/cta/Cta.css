@@ -1,0 +1,24 @@
+.cta-btn-md{
+    display: none;
+}
+@media screen and (max-width : 950px) {
+    .cta{
+        gap: 2rem;
+        flex-direction: column-reverse;
+    }
+    .cta > div{
+        width:100% ;
+    }
+    .cta-title{
+        font-size: 1.5rem;
+    }
+    .cta-text{
+        font-size: 0.75rem;
+    }
+    .cta-btn-lg{
+        display: none;
+    }
+    .cta-btn-md{
+        display: flex;
+    }
+}

@@ -1,3 +1,4 @@
+import Footer from '../footer/Footer';
 import Header from '../header/Header';
 function MainLayout({ children }) {
   return (
@@ -6,6 +7,7 @@ function MainLayout({ children }) {
       <main>
         {children}
       </main>
+      <Footer></Footer>
     </>
   )
 }
