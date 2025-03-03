@@ -46,7 +46,7 @@ function Product({ detial, ...rest }) {
                     <span className="text-sm">قیمت</span>
                     <span className="text-lg">{detial.price} تومان</span>
                 </div>
-                <Link to={`/single/${detial.id}`}>
+                <Link to={`/products/${detial.id}`}>
                     <Button className='w-full' size="md">
                         مشاهده بیشتر
                     </Button>

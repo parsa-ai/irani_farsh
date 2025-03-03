@@ -7,7 +7,7 @@ import './Hero.css'
 function Hero() {
     return (
         <Container>
-            <div className="  w-full flex justify-between items-center gap-24 py-20 mt-32 hero-img">
+            <div className="  w-full flex justify-between items-center gap-24 py-20  hero-img">
                 <div>
                     <div className="w-xl text-center flex flex-col gap-6 justify-center items-center hero-text">
                         <h2 className="text-BLACK text-[40px] font-bold hero-h2">

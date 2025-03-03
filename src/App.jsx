@@ -9,22 +9,26 @@ import Single from './pages/single/Single'
 import Blog from './pages/blog/Blog'
 import Contact from './pages/contact/Contact'
 import Cart from './pages/Cart/Cart'
+import NotFound from './components/notfound/NotFound'
+import Singin from './pages/singin/Singin'
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <MainLayout>
-          <Routes>
+        <Routes>
+        <Route path='/login' element={<Login />}></Route>
+        <Route path='/singin' element={<Singin />}></Route>
+          <Route element={<MainLayout />}>
             <Route path='/' element={<Home />}></Route>
             <Route path='/about' element={<About />}></Route>
-            <Route path='/login' element={<Login />}></Route>
             <Route path='/cart' element={<Cart />}></Route>
-            <Route path='/:single' element={<Single />}></Route>
+            <Route path='/products/:id' element={<Single />}></Route>
             <Route path='/blog' element={<Blog />}></Route>
             <Route path='/contact' element={<Contact />}></Route>
-          </Routes>
-        </MainLayout>
+            <Route path='*' element={<NotFound />}></Route>
+          </Route>
+        </Routes>
       </BrowserRouter>
     </>
   )
