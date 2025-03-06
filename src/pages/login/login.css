@@ -1,0 +1,12 @@
+.mobile{
+    display: none;
+}
+@media screen and (max-width : 950px) {
+
+    .laptop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+}
