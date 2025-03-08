@@ -1,0 +1,35 @@
+@media screen and (max-width : 950px) {
+
+    .main-cart {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main-cart div {
+        width: 100%;
+    }
+
+    .item-cart h5 {
+        font-size: 14px;
+    }
+
+    .main-cart p {
+        font-size: 10px;
+    }
+
+    .item-cart span {
+        font-size: 8px;
+    }
+
+    .item-cart svg {
+        width: 8px;
+    }
+
+    .item-cart .img {
+        width: 70px;
+    }
+
+    .item-cart .count-div {
+        width: fit-content;
+    }
+}
