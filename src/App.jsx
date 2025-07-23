@@ -8,7 +8,7 @@ import Login from './pages/login/Login'
 import Single from './pages/single/Single'
 import Blog from './pages/blog/Blog'
 import Contact from './pages/contact/Contact'
-import Cart from './pages/Cart/Cart'
+import Cart from './pages/cart/Cart'
 import NotFound from './components/notfound/NotFound'
 import Singin from './pages/singin/Singin'
 
