@@ -1,6 +1,6 @@
 import Button from "../button/Button"
 import Container from "../container/Container"
-import cta from '../../assets/images/cta.png'
+import cta from '../../assets/images/Cta.png'
 
 import './Cta.css'
 import { Link } from "react-router-dom"
